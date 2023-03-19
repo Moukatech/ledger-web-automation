@@ -30,7 +30,9 @@ jobs:
       with:
         repository: gothinkster/react-redux-realworld-example-app # pulls the app to be tested.
         ref: Master 
-        path: app # 
+        path: |
+          cd 
+          app
 
     - name: Install dependencies
       run: |
