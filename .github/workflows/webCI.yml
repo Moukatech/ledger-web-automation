@@ -34,8 +34,7 @@ jobs:
     - name: Pull code from different repo
       uses: actions/checkout@v2
       with:
-        repository: gothinkster/react-redux-realworld-example-app # pulls the app to be tested.
-        ref: Master 
+        repository: gothinkster/react-redux-realworld-example-app # pulls the app to be tested. 
         path: app
 
     - name: Install dependencies
