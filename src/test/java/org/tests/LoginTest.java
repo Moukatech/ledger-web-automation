@@ -23,7 +23,7 @@ public class LoginTest {
         SelenideElement blogTitle = $(By.xpath("//*[@id='main']/div/div/div[1]/div/h1"));
         $(By.xpath("//*[@id='main']//a[contains(text(),'New Post')]")).click();
         publishButton.should(appear);
-        $(By.xpath("//*/fieldset[1]/input")).setValue("My Second blog to write");
+        $(By.xpath("//*/fieldset[1]/input")).setValue("My Third blog to write");
         $(By.xpath("//*/fieldset[2]/input")).setValue("Mentor young QA members");
         $(By.xpath("//*/fieldset[3]/textarea")).setValue("Provide Materials to learn for the team /n Provide knowledge sharing sessions");
         $(By.xpath("//*/fieldset[4]/input")).setValue("#automation for all");
