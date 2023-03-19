@@ -35,7 +35,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: gothinkster/react-redux-realworld-example-app # pulls the app to be tested. 
-        path: /Home/app
+        path: app
 
     - name: Install dependencies
       run: |
