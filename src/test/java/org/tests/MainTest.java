@@ -18,7 +18,7 @@ public class MainTest {
     ExtentReports extent;
     @BeforeSuite
     public void setUp() {
-        htmlReporter = new ExtentSparkReporter("testReport/extentReport.html");
+        htmlReporter = new ExtentSparkReporter("testReport/index.html");
         //create ExtentReports and attach reporter(s)
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
