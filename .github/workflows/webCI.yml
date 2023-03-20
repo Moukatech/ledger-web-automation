@@ -58,7 +58,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run:  mvn test -Durl=http://localhost:4100/ -Dchromeoptions.args=headless
+      run:  mvn test -Durl=https://react-redux.realworld.io/ -Dchromeoptions.args=headless
     - name: Deploy to Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
