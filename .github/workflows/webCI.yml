@@ -64,7 +64,7 @@ jobs:
       if: always()
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: master
+        branch: gh-pages
         folder: ./testReport
         
     
