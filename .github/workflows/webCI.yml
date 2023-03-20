@@ -57,9 +57,11 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
+    - name: Build Project to Run tests
       run:  mvn test -Durl=https://react-redux.realworld.io/ -Dchromeoptions.args=headless
-    - name: Deploy to Pages
+      
+    - name: Deploy report to gh-Pages
+      if: always()
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
